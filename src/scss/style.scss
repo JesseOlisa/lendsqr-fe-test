@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+@import 'variables';
+@import 'utilites';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 100%;
+	min-height: 100vh;
+	font-size: 1.1rem;
+	background-color: $bgColor-primary;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Avenir Next', sans-serif;
+	color: $text-primary;
+	font-weight: 500;
+	overflow-y: hidden;
+}
+
+img{
+	max-width: 100%;
+}
+label{
+	display: block;
+}
+input{
+	width: 100%;
+	padding: .75rem;
+	border: 2px solid rgba(84, 95, 125, 0.15);
+	border-radius: 5px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: $text-primary;
+	transition: border 0.2s ease-in-out;
+}
+input:focus{
+	border: 2px solid rgba(84, 95, 125, 0.25);
+	outline: none;
+}
+::placeholder{
+	color: $text-primary;
+	opacity: 0.7;
+}
+::-ms-input-placeholder { 
+	color: $text-primary;
+	opacity: 0.7;
+}
+a{
+	text-decoration: none;
+}
+a:visited{
+	color: $text-primary;
+}
+button{
+	outline: none;
+	border: none;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+
+ul,li{
+	list-style-type: none;
+}
+
+@import './components/login';
+@import './components/header';
+@import './components/sidebar';

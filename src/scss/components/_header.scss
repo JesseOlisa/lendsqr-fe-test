@@ -1,0 +1,54 @@
+.header--container {
+	@include flex(space-between, center);
+	padding: 1.2rem 2rem;
+	box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+	background-color: #ffffff;
+
+	.logo--container {
+		max-width: 105px;
+	}
+
+	.search--container {
+		@include flex(center, center);
+		flex-grow: 0.2;
+
+		input {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			border-right: none;
+		}
+        .btn-search {
+            width: 50px;
+            font-size: 1rem;
+            padding-block: 0.75rem;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+	}
+
+
+    .userinfo--container{
+		@include flex(space-between, center);
+        gap: 2rem;
+        
+        a{
+            color: $text-secondary;
+            font-size: 1rem;
+            text-decoration: underline;
+            font-family: 'Roboto', sans-serif;
+        }
+        .bell-icon{
+            cursor: pointer;
+        }
+        .profile--container{
+            @include flex(center, center);
+            gap: .5rem;
+            cursor: pointer;
+
+            h4{
+                font-weight: 600;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,28 @@
+@mixin flex($justify, $align) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+.main--container {
+	min-width: 100%;
+	min-height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+	// @include flex(center, center )
+}
+.dashboard--container{
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+    // background: black;
+ }
+.btn {
+	background-color: $btn-primary;
+	color: #ffffff;
+	border-radius: 8px;
+	font-weight: 700;
+	font-size: 0.75rem;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+    // width: 100%;
+}

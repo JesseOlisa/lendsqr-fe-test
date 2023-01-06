@@ -41,7 +41,6 @@ body {
   font-family: "Avenir Next", sans-serif;
   color: #545F7D;
   font-weight: 500;
-  overflow-y: hidden;
 }
 
 img {
@@ -321,6 +320,10 @@ ul, li {
   background: #D7F5F4;
   border-left: 3px solid #213F7D;
   opacity: 1;
+}
+
+.pagination--container {
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=index.css.map */

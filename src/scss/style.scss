@@ -23,7 +23,7 @@ body {
 	font-family: 'Avenir Next', sans-serif;
 	color: $text-primary;
 	font-weight: 500;
-	overflow-y: hidden;
+	// overflow-y: hidden;
 }
 
 img{
@@ -74,3 +74,5 @@ ul,li{
 @import './components/login';
 @import './components/header';
 @import './components/sidebar';
+@import './components/user';
+@import './components/pagination';
